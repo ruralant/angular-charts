@@ -1,0 +1,17 @@
+<div class="container">
+  <div id="canvas">
+    <canvas baseChart width="400" height="400"
+      [datasets]="barChartData"
+      [labels]="mbarChartLabels"
+      [options]="barChartOptions"
+      [colors]="barChartColors"
+      [legend]="barChartLegend"
+      [chartType]="barChartType"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)">
+    </canvas>
+  </div>
+  <div class="control">
+    <button (click)="randomize()">Shuffle</button>
+  </div>  
+</div>
