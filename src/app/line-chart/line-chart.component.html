@@ -11,8 +11,8 @@
       (chartClick)="chartClicked($event)">
     </canvas>
   </div>
-  <div class="control" style="margin-bottom: 10px">
-    <table class="table table-responsive table-condensed">
+  <div class="control">
+    <table>
       <tr>
         <th *ngFor="let label of lineChartLabels">{{label}}</th>
       </tr>
@@ -20,6 +20,6 @@
         <td *ngFor="let label of lineChartLabels; let j=index">{{d && d.data[j]}}</td>
       </tr>
     </table>
-    <button class="btn btn-default" (click)="randomize()">Shuffle</button>
+    <button (click)="randomize()">Shuffle</button>
   </div>  
 </div>
